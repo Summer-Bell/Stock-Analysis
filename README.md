@@ -21,7 +21,7 @@ The "All Stocks Analysis" worksheet includes three buttons with macros assigned.
 The "Run Analysis for All Stocks" button is the original code, after selecting that button a message box will prompt the user to enter the year to run analysis on.
 The "Challenge 2 - Refactored Stock Analysis" button is the refactored code, after selecting that button a message box will prompt the user to enter the year to run analysis on.
 Both the original and refactored code utilize the code below which is the start of a for loop to loop over all the rows in the dataset. 
-For i = 2 To RowCount
+'For i = 2 To RowCount'
 Within the for loop is an if-then statement which allows the program to calculate the starting and ending prices that are used in the "Results" calculation.
 
 ### Execution Times of Original Script and Refactored Script
@@ -30,8 +30,8 @@ The average execution time for the refactored code was .115234 seconds.
 The average execution time for the refactored code was .748047 seconds.
 The refactored code was on average .632813 seconds faster than the original code.
 The code used to calculate and display the codes run time is below.
-endTime = Timer
-    MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+'endTime = Timer
+    MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)'
 Output messages with the execution time for the refactored code are included for 2017 and 2018.
 [VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png)
 [VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
